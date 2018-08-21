@@ -1,46 +1,33 @@
-<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addons>
+<?xml version='1.0' encoding='UTF-8'?>
+<addons><addon id="plugin.video.jwb-unofficial" name="JWB unofficial" provider-name="allejok96" version="1.9.0">
 
-    <addon
-      id="repository.allejok96"
-      name="allejok96's Repository"
-      version="0.1"
-      provider-name="allejok96">
-      
-	    <extension point="xbmc.addon.repository" name="allejok96's Repository">
-		    <info compressed="false">https://raw.githubusercontent.com/allejok96/repository.allejok96/master/addons.xml</info>
-		    <checksum>https://raw.githubusercontent.com/allejok96/repository.allejok96/master/addons.xml.md5</checksum>
-		    <datadir zip="true">https://raw.githubusercontent.com/allejok96/repository.allejok96/master/</datadir>
-	    </extension>
-	    
-	    <extension point="xbmc.addon.metadata">
-		    <summary>allejok96's Repository</summary>
-		    <description>Including JWB Unofficial add-on</description>
-		    <platform>all</platform>
-	    </extension>
-	    
-    </addon>
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.simplejson" version="3.3.0" />
+  </requires>
 
-    <addon
-      id="plugin.video.jwb-unofficial"
-      version="1.9"
-      name="JWB unofficial"
-      provider-name="allejok96">
+  <extension library="addon.py" point="xbmc.python.pluginsource">
+    <provides>video</provides>
+  </extension>
 
-      <requires>
-        <import addon="xbmc.python" version="2.1.0" />
-        <import addon="script.module.simplejson" version="3.3.0" />
-      </requires>
-
-      <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-      </extension>
-
-      <extension point="xbmc.addon.metadata">
-        <summary lang="en">Unofficial JW Broadcasting client</summary>
-        <description lang="en">Watch and listen to content from JW Broadcasting. Consider using the official JW Broadcasting app, if available on your device. Or even just the tv.jw.org website, as this plugin is not officially supported by the Watchtower Society.</description>
-        <disclaimer lang="en">This is not an offical plugin, please do not contact jw.org for support.</disclaimer>
-        <platform>all</platform>
-      </extension>
-    </addon>
-</addons>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en">Unofficial JW Broadcasting client</summary>
+    <description lang="en">Watch and listen to content from JW Broadcasting. Consider using the official JW Broadcasting app, if available on your device. Or even just the tv.jw.org website, as this plugin is not officially supported by the Watchtower Society.</description>
+    <disclaimer lang="en">This is not an offical plugin, please do not contact jw.org for support.</disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon><addon id="repository.allejok96" name="allejok96's Repository" provider-name="allejok96" version="0.1.0">
+  
+    <extension name="allejok96's Repository" point="xbmc.addon.repository">
+	    <info compressed="false">https://raw.githubusercontent.com/allejok96/repository.allejok96/master/addons.xml</info>
+	    <checksum>https://raw.githubusercontent.com/allejok96/repository.allejok96/master/addons.xml.md5</checksum>
+	    <datadir zip="true">https://raw.githubusercontent.com/allejok96/repository.allejok96/master/</datadir>
+    </extension>
+    
+    <extension point="xbmc.addon.metadata">
+	    <summary>allejok96's Repository</summary>
+	    <description>Including JWB Unofficial add-on</description>
+	    <platform>all</platform>
+    </extension>
+    
+</addon></addons>
