@@ -1,3 +1,13 @@
+### You're on the `kodi18` branch
+
+This branch serves as an archive for the Kodi 18 (Leia) addons, before the switch to Python 2.
+
+The addon repo's main xml will direct you to the correct branch depending on what Kodi version you are running.
+
+At the moment, the main branch only holds the absolute latest versions of the addon (no option to downgrade),
+that's why I made the branch to keep the v18 versions...
+
+
 # Kodi repository for unofficial JW add-ons
 
 To get started, download
